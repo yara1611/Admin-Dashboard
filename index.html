@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="search" style="display: inline-block;"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+            </svg> <input type="text" id="search"></div>
+        <div class='icons' style="display: inline-block;">
+            <svg width="24" height="24" stroke-width="1.5" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M18.1336 11C18.7155 16.3755 21 18 21 18H3C3 18 6 15.8667 6 8.4C6 6.70261 6.63214 5.07475 7.75736 3.87452C8.88258 2.67428 10.4087 2 12 2C12.3373 2 12.6717 2.0303 13 2.08949"
+                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                    d="M19 8C20.6569 8 22 6.65685 22 5C22 3.34315 20.6569 2 19 2C17.3431 2 16 3.34315 16 5C16 6.65685 17.3431 8 19 8Z"
+                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                    d="M13.73 21C13.5542 21.3031 13.3019 21.5547 12.9982 21.7295C12.6946 21.9044 12.3504 21.9965 12 21.9965C11.6496 21.9965 11.3054 21.9044 11.0018 21.7295C10.6982 21.5547 10.4458 21.3031 10.27 21"
+                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                class="bi bi-person-circle" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                <path fill-rule="evenodd"
+                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+            </svg>
+            <h4 style="display: inline-block;">@Username</h4>
+        </div>
+
+    </div>
+    <div class="topnav">
+        <div class='avatarcard' style="display: inline-block; margin-left: 50px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor"
+                class="bi bi-person-circle" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                <path fill-rule="evenodd"
+                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+            </svg>
+            <pre style="display: inline-block; text-align: left; margin-left: 20px;">Hello,
+<h3 style="display: inline;">@Username</h3>
+            </pre>
+
+        </div>
+        <a>Share</a>
+        <a>Upload</a>
+        <a>New</a>
+    </div>
+    <div class="nav">
+        <!-- <svg style="color: white; margin-top: 10px; margin-left: 20px;" width="50" height="50" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M22 20H11V13H22V20ZM9 20H2V13H9V20ZM22 11H2V4H22V11Z" fill="white"></path>
+        </svg>
+        <h2 style="display: inline; margin-left: 0px;  color: white;">Dashboard</p> -->
+        <h2 style="color: white;">
+            <span> <svg style="color: white; margin-left:20px" xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                    fill="currentColor" class="bi bi-grid-1x2-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M0 1a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V1zm9 0a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1V1zm0 9a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-5z"
+                        fill="white"></path>
+                </svg> </span>
+            Dashboard
+        </h2>
+        <div class="links">
+            <ul>
+                <li> <span><svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
+                            <path
+                                d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"
+                                fill="white"></path>
+                        </svg></span> <a href="/index.html">Home</a></li>
+                <li> <span><svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-person-lines-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2z"
+                                fill="white"></path>
+                        </svg></span> <a href="/index.html">Profile</a></li>
+                <li> <span><svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-mailbox" viewBox="0 0 16 16">
+                            <path
+                                d="M4 4a3 3 0 0 0-3 3v6h6V7a3 3 0 0 0-3-3zm0-1h8a4 4 0 0 1 4 4v6a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V7a4 4 0 0 1 4-4zm2.646 1A3.99 3.99 0 0 1 8 7v6h7V7a3 3 0 0 0-3-3H6.646z"
+                                fill="white"></path>
+                            <path
+                                d="M11.793 8.5H9v-1h5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.354-.146l-.853-.854zM5 7c0 .552-.448 0-1 0s-1 .552-1 0a1 1 0 0 1 2 0z"
+                                fill="white"></path>
+                        </svg></span> <a href="/index.html">Messages</a></li>
+                <li> <span><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24"
+                            id="IconChangeColor" height="18" width="18">
+                            <path
+                                d="M16.4,3.3C12.5,1.1,7.7,1.8,4.6,4.8V3c0-0.6-0.4-1-1-1s-1,0.4-1,1v4.5c0,0.6,0.4,1,1,1h4.5c0.6,0,1-0.4,1-1s-0.4-1-1-1H5.7C7.1,4.9,9.2,4,11.5,4c4.4,0,8,3.6,8,8s-3.6,8-8,8c-0.6,0-1,0.4-1,1s0.4,1,1,1c3.6,0,6.9-1.9,8.7-5C22.9,12.2,21.2,6.1,16.4,3.3z M11.4,8c-0.6,0-1,0.4-1,1v3c0,0.6,0.4,1,1,1h2c0.6,0,1-0.4,1-1s-0.4-1-1-1h-1V9C12.4,8.4,12,8,11.4,8z"
+                                id="mainIconPathAttribute" fill="#ffffff"></path>
+                        </svg></span> <a href="/index.html">History</a></li>
+                <li> <span><svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-list-check" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3.854 2.146a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 3.293l1.146-1.147a.5.5 0 0 1 .708 0zm0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 7.293l1.146-1.147a.5.5 0 0 1 .708 0zm0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z"
+                                fill="white"></path>
+                        </svg></span> <a href="/index.html">Tasks</a></li>
+                <li> <span><svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
+                            <path
+                                d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"
+                                fill="white"></path>
+                        </svg></span> <a href="/index.html">Communities</a></li>
+            </ul>
+        </div>
+        <div class="links">
+            <ul>
+                <li><span><svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
+                            <path
+                                d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"
+                                fill="white"></path>
+                            <path
+                                d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"
+                                fill="white"></path>
+                        </svg></span> <a href="/index.html">Settings</a></li>
+                <li><span><svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                            <path
+                                d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+                                fill="white"></path>
+                        </svg></span> <a href="/index.html">Support</a></li>
+                <li><span><svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-shield-check" viewBox="0 0 16 16">
+                            <path
+                                d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z"
+                                fill="white"></path>
+                            <path
+                                d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"
+                                fill="white"></path>
+                        </svg></span> <a href="/index.html">Privacy</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="content column">
+            <h3>Main Content</h3>
+            <div class="projects">
+                <div class="card content">
+                    <div class="line" style="background-color: yellow;"></div>
+                    <h2>Hello</h2>
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ducimus officia fuga doloribus
+                        sed incidunt, provident est officiis voluptatum aspernatur suscipit soluta veniam dolorem
+                        facilis, inventore nostrum, doloremque quam! Voluptatum!</P>
+                </div>
+                <div class="card content">
+                    <h2>Hello</h2>
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ducimus officia fuga doloribus
+                        sed incidunt, provident est officiis voluptatum aspernatur suscipit soluta veniam dolorem
+                        facilis, inventore nostrum, doloremque quam! Voluptatum!</P>
+                </div>
+                <div class="card content">
+                    <h2>Hello</h2>
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ducimus officia fuga doloribus
+                        sed incidunt, provident est officiis voluptatum aspernatur suscipit soluta veniam dolorem
+                        facilis, inventore nostrum, doloremque quam! Voluptatum!</P>
+                </div>
+            </div>
+        </div>
+        <div class="side column antd">
+            <div class="announc">
+                <h2>Announcements</h2>
+                <div class="card item">
+                    <h3>Hello</h3>
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ducimus officia fuga doloribus
+                        sed incidunt, provident est officiis voluptatum aspernatur suscipit soluta veniam dolorem
+                        facilis, inventore nostrum, doloremque quam! Voluptatum!</P>
+                </div>
+                <div class="card item">
+                    <h3>Hello</h3>
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ducimus officia fuga doloribus
+                        sed incidunt, provident est officiis voluptatum aspernatur suscipit soluta veniam dolorem
+                        facilis, inventore nostrum, doloremque quam! Voluptatum!</P>
+                </div>
+                <div class="card item">
+                    <h3>Hello</h3>
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ducimus officia fuga doloribus
+                        sed incidunt, provident est officiis voluptatum aspernatur suscipit soluta veniam dolorem
+                        facilis, inventore nostrum, doloremque quam! Voluptatum!</P>
+                </div>
+            </div>
+            <div class="trending">
+                <h2>Trending</h2>
+                <div class="card item">
+                    <h3>Hello</h3>
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ducimus officia fuga doloribus
+                        sed incidunt, provident est officiis voluptatum aspernatur suscipit soluta veniam dolorem
+                        facilis, inventore nostrum, doloremque quam! Voluptatum!</P>
+                </div>
+                <div class="card item">
+                    <h3>Hello</h3>
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ducimus officia fuga doloribus
+                        sed incidunt, provident est officiis voluptatum aspernatur suscipit soluta veniam dolorem
+                        facilis, inventore nostrum, doloremque quam! Voluptatum!</P>
+                </div>
+                <div class="card item">
+                    <h3>Hello</h3>
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ducimus officia fuga doloribus
+                        sed incidunt, provident est officiis voluptatum aspernatur suscipit soluta veniam dolorem
+                        facilis, inventore nostrum, doloremque quam! Voluptatum!</P>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+        Admin Dashboard 2023
+    </div>
+</body>
+
+</html>
